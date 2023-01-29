@@ -22,12 +22,19 @@ nav li {
 }
 
 nav a {
-    text-transform: uppercase;  /*Deixa tudo em maiúsculas*/
+    text-transform: uppercase;  /*Deixa tudo em maiúsculo*/
     color: #000000;
     font-weight: bold; /*Coloca o texto em negrito*/
     font-size: 22px;
     text-decoration: none; /*Retira a decoração e sublinhado*/
 }
+
+/*comportamento do mouse*/
+nav a:hover {
+    color: #C78C19;
+    text-decoration: underline;
+}
+/*-------- Fim ---------*/
 
 .produtos {
     width: 940px;
@@ -48,6 +55,20 @@ nav a {
     border-radius: 10px;
 }
 
+/*quando passar o mouse*/
+.produtos li:hover {
+    border-color: #C78C19;
+}
+
+/*quando clicado*/
+.produtos li:active {
+    border-color: #088C19;
+}
+
+.produtos li:hover h2 {
+    font-size: 34px;
+}
+
 .produtos h2 {
     font-size: 30px;
     font-weight: bold;
@@ -60,4 +81,17 @@ nav a {
     font-size: 22px;
     font-weight: bold;
     margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    background: #181818;
+    /*background: url(bg.jpg); */
+    padding: 40px 0;
+}
+
+.Copyright {
+    color: #FFFFFF;
+    font-size: 14px;
+    margin: 20px 0 0 0;    
 }
