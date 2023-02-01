@@ -1,0 +1,131 @@
+/* inicio do cabeçalho*/
+
+header{
+    background: #BBBBBB;
+    padding: 20px 0;
+}
+
+.caixa {
+    position: relative;
+    width: 940px;
+    margin: 0  auto;
+}
+
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+nav li {
+    display:inline;
+    margin: 0 0 0 15px; /* sequencia de margens: topo, direita, baixo, esquerda*/
+
+}
+
+nav a {
+    text-transform: uppercase;  /*Deixa tudo em maiúsculo*/
+    color: #000000;
+    font-weight: bold; /*Coloca o texto em negrito*/
+    font-size: 22px;
+    text-decoration: none; /*Retira a decoração e sublinhado*/
+}
+
+/*comportamento do mouse*/
+nav a:hover {
+    color: #C78C19;
+    text-decoration: underline;
+}
+/*-------- Fim do cabeçalho ---------*/
+
+#banner {
+	border: #000000;
+	width:100%;
+    border-top: 2px solid #777777;
+    border-radius: 0 0 10px 10px;
+
+}
+
+.principal{
+	background: #CCCCCC;
+	padding: 30px;
+    margin: 0  auto;
+    border-radius: 10px;
+}
+
+/* comentada apos o titulo ser substituído pelo header
+.titulo-principal {
+	padding-left: 20px;
+}
+*/
+
+.titulo-centralizado {
+	text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 22px;
+}
+/* inicio descrição */
+.descricao {
+	text-align: center;
+    padding: 20px;
+    position: relative;
+    width: 900px;
+    margin: 0  auto;
+}
+
+#missao {
+    text-align: center;
+	font-size: 20px;
+    font-style: italic;
+}
+
+em strong {
+	color: #FF0000;
+    font-weight: bold;
+}
+/* fim descrição */
+.itens {
+	font-style: italic;
+    
+}
+
+.beneficios {
+	background: #FFFFFF;
+	padding: 20px;
+    margin-left: 50px;
+}
+
+/* substituída pela class lista-benefícios
+ul {
+	display: inline-block;
+	vertical-align: top;
+	width: 20%;
+	margin-right: 15%;
+}
+*/
+
+.lista-beneficios {
+	display: inline-block;
+	vertical-align: top;
+	width: 20%;
+	margin-right: 15%;
+    list-style: disc;
+    font-size: 22px;
+}
+
+.imagembeneficios {
+	width: 30%;
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+    background: url(bg.jpg);
+    padding: 40px 0;
+}
+
+.Copyright {
+    color: #FFFFFF;
+    font-size: 14px;
+    margin: 20px 0 0 0;    
+}
