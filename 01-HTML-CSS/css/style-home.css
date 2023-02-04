@@ -1,3 +1,46 @@
+/* inicio do cabeçalho */
+header{
+    background: #BBBBBB;
+    padding: 2px 0;   /* modifiquei de 20px para 2ox pois achei o visual mais agradável*/
+}
+
+/* .logo {
+	width: 60px;
+} */
+
+.caixa {
+    position: relative;
+    width: 940px;
+    margin: 0  auto;
+}
+
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+
+}
+
+nav a {
+    text-transform: uppercase;  /*Deixa tudo em maiúsculo*/
+    color: #000000;
+    font-weight: bold; /*Coloca o texto em negrito*/
+    font-size: 22px;
+    text-decoration: none; /*Retira a decoração e sublinhado*/
+}
+
+/*comportamento do mouse*/
+nav a:hover {
+    color: #C78C19;
+    text-decoration: underline;
+}
+/*-------- Fim ---------*/
+
 #banner {
 	width:100%;
 }
@@ -25,6 +68,7 @@ p {
 
 em strong {
 	color: #FF0000;
+    
 }
 
 .itens {
@@ -36,7 +80,7 @@ em strong {
 	padding: 20px;
 }
 
-ul {
+.beneficios-lista {
 	display: inline-block;
 	vertical-align: top;
 	width: 20%;
@@ -45,4 +89,17 @@ ul {
 
 .imagembeneficios {
 	width: 50%;
+}
+
+/* imagem e config do rodapé */
+footer {
+    text-align: center;
+    background: url(/img/bg.jpg);
+    padding: 40px 0;
+}
+
+.Copyright {
+    color: #FFFFFF;
+    font-size: 14px;
+    margin: 20px 0 0 0;    
 }

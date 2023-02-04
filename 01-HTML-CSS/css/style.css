@@ -1,6 +1,11 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* inicio do cabeçalho */
 header{
     background: #BBBBBB;
-    padding: 20px 0;
+    padding: 2px 0;            /* modifiquei de 20px para 2ox pois achei o visual mais agradável*/
 }
 
 .caixa {
@@ -17,16 +22,16 @@ nav {
 
 nav li {
     display: inline;
-    margin: 0 0 0 15px; /* sequencia de margens: topo, direita, baixo, esquerda*/
+    margin: 0 0 0 15px;         /* sequencia de margens: topo, direita, baixo, esquerda*/
 
 }
 
 nav a {
     text-transform: uppercase;  /*Deixa tudo em maiúsculo*/
     color: #000000;
-    font-weight: bold; /*Coloca o texto em negrito*/
+    font-weight: bold;          /*Coloca o texto em negrito*/
     font-size: 22px;
-    text-decoration: none; /*Retira a decoração e sublinhado*/
+    text-decoration: none;      /*Retira a decoração e sublinhado*/
 }
 
 /*comportamento do mouse*/
@@ -48,7 +53,7 @@ nav a:hover {
     width: 30%;
     vertical-align: top;
     /*background: #CCCCCC; */
-    margin: 0 1.5%; /*se usar dois numero, o primeiro representa cima/baixo e o segundo, esquerda/direita*/
+    margin: 0 1.5%;         /*se usar dois numero, o primeiro representa cima/baixo e o segundo, esquerda/direita*/
     padding: 30px 20px;
     box-sizing: border-box; /*Faz com que o padding nao aumente o tamanho do conteúdo*/
     border: 2px solid #000000;
@@ -104,7 +109,7 @@ form {
     margin: 40px 0;
 }
 
-form label, form p {
+form label, form legend {
     display: block;
     font-size: 20px;
     margin: 0 0 10px;
@@ -119,4 +124,111 @@ form label, form p {
 
 .checkbox {
     margin: 20px 0;
+}
+
+/* Botão enviar */
+.enviar {
+    width: 40%;                     /*tamanho*/
+    padding: 15px 0;                /*largura/altura, larguras/laterais*/
+    background: orange;
+    color: white;                 /*cor da fonte do texto*/
+    font-weight: bold;              /*negrito*/
+    font-size: 18px;
+    border: none;                   /*remove as bordas*/
+    border-radius: 5px;             /*arredonda os cantos*/
+    transition: 1s all;
+    cursor: pointer;                /*muda o mouse para a mãozinha*/
+}
+
+.enviar:hover {
+    background: darkorange;       /*cor ao passar o mouse*/
+    transform: scale(1.1);
+}
+
+/* Estilizando a tabela */
+table {
+    margin: 20px 0 40px;
+}
+
+thead {
+    background: #555555; 
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+td, th {
+    border: 1px solid #000000;
+    padding: 8px 15px;
+}
+
+/* css da pagina inicial */
+.banner {
+    width: 100%;
+    margin: 0 0 2em;
+}
+
+.titulo-principal {
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;            /* usado para limpar o float da imagem utensílios*/
+}
+
+.principal p {
+    margin: 0 0 1em;
+}
+
+.principal strong {
+    font-weight: bold;
+}
+.principal em {
+    font-style: italic;
+}
+
+.utensilios {
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+/* css do mapa*/
+.mapa {
+    padding: 3em 0;
+}
+
+.mapa p{
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.beneficios {
+    padding: 3em;
+}
+
+.conteudo-beneficios {
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-beneficios {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.itens {
+    line-height: 1.5;
+}
+
+.itens:first-child {
+    font-weight: bold;
+}
+
+.imagem-beneficios {
+    width: 60%;
+}
+
+.video {
+    width: 560px;
+    margin: 2em auto;
 }
