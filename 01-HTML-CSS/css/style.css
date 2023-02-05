@@ -5,7 +5,7 @@ body {
 /* inicio do cabeçalho */
 header{
     background: #BBBBBB;
-    padding: 2px 0;            /* modifiquei de 20px para 2ox pois achei o visual mais agradável*/
+    padding: 2px 0;            /* modifiquei de 20px para 2px pois achei o visual mais agradável*/
 }
 
 .caixa {
@@ -71,7 +71,7 @@ nav a:hover {
 }
 
 .produtos li:hover h2 {
-    font-size: 34px;
+    font-size: 32px;
 }
 
 .produtos h2 {
@@ -101,8 +101,7 @@ footer {
 }
 /* css do conteúdo do formulário */
 main {
-    width: 940px;
-    margin: 0 auto;
+
 }
 
 form {
@@ -171,7 +170,14 @@ td, th {
     text-align: center;
     font-size: 2em;
     margin: 0 0 1em;
-    clear: left;            /* usado para limpar o float da imagem utensílios*/
+    clear: left;            /* usado para limpar o float da imagem utensílios */
+}
+
+.principal {
+    margin: 3em 0;
+    background: #FFFFFE;
+    width: 940px;
+    margin: 0 auto;
 }
 
 .principal p {
@@ -194,6 +200,12 @@ td, th {
 /* css do mapa*/
 .mapa {
     padding: 3em 0;
+    background: linear-gradient(#FFFFFE, #888888)
+}
+
+.mapa-conteudo {
+    width: 940px;
+    margin: 0 auto;
 }
 
 .mapa p{
@@ -201,15 +213,16 @@ td, th {
     text-align: center;
 }
 
+/* css da lista de benefícios */
 .beneficios {
     padding: 3em;
+    background: #888888;
 }
 
 .conteudo-beneficios {
     width: 640px;
     margin: 0 auto;
 }
-
 .lista-beneficios {
     width: 40%;
     display: inline-block;
@@ -217,17 +230,29 @@ td, th {
 }
 
 .itens {
-    line-height: 1.5;
+    line-height: 1.5;        /*Altura da lina*/
 }
 
-.itens:first-child {
+.itens:first-child {         /* coloca o primeiro item da lista em negrito */
     font-weight: bold;
+}
+
+.itens:before {
+    content: "✦ ";
 }
 
 .imagem-beneficios {
     width: 60%;
+    opacity: 1;
+    transition: 400ms;
+    box-shadow: 10px 10px 10px 0 #000000;
 }
 
+.imagem-beneficios:hover {
+    opacity: 0.7;
+}
+
+/* css do video */
 .video {
     width: 560px;
     margin: 2em auto;
