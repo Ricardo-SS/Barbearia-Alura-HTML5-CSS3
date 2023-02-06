@@ -71,11 +71,11 @@ nav a:hover {
 }
 
 .produtos li:hover h2 {
-    font-size: 32px;
+    font-size: 30px;
 }
 
 .produtos h2 {
-    font-size: 30px;
+    font-size: 28px;
     font-weight: bold;
 }
 .produto-descricao {
@@ -87,6 +87,7 @@ nav a:hover {
     font-weight: bold;
     margin-top: 10px;
 }
+
 /* imagem e config do rodapé */
 footer {
     text-align: center;
@@ -101,14 +102,11 @@ footer {
 }
 /* css do conteúdo do formulário */
 
-form {
-    margin: 40px 0;
-}
 
-form label, form legend {
+form label, form legend, fieldset {
     display: block;
     font-size: 20px;
-    margin: 0 0 10px;
+    margin: 2em 0 10px;
 }
 
 .input-padrao {
@@ -124,7 +122,8 @@ form label, form legend {
 
 /* Botão enviar */
 .enviar {
-    width: 40%;                     /*tamanho*/
+    width: 40%;
+    margin-top: 20px;                     /*tamanho*/
     padding: 15px 0;                /*largura/altura, larguras/laterais*/
     background: orange;
     color: white;                 /*cor da fonte do texto*/
@@ -143,7 +142,8 @@ form label, form legend {
 
 /* Estilizando a tabela */
 table {
-    margin: 20px 0 40px;
+    width: 30%;
+    margin: 3em 15%;
 }
 
 thead {
@@ -255,11 +255,11 @@ td, th {
     margin: 2em auto;
 }
 
-/* pagina inicial mobile */
-@media (max-width: 480px){
-    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+/* pagina mobile */
+@media (max-width: 480px) {
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video, .produtos li {
         width: auto;
-        padding: 8px;
+        margin: 8px;
     }
 
     h1 {
@@ -270,21 +270,15 @@ td, th {
         position: static;
     }
 
-    .lista-beneficios, .imagem-beneficios {
+    .lista-beneficios, .imagem-beneficios, .produtos, .imagem-cabelo, .imagem-barba, .imagem-cabelo-barba {
         width: 100%;
+    }
+
+    .input-padrao, .enviar, .checkbox, form label, form legend, fieldset select, table   {
+        font-size: 20px;
+        width: 90%;
+        margin: 20px 5%;
+        padding: 10px 2px;
     }
 }
 
-@media (max-width: 480px){
-    .caixa, .principal, .produtos {
-        width: 100%;
-        padding: 8px;
-    }
-
-    .imagem-cabelo, .imagem-barba, .imagem-cabelo-barba {
-        width: 100%;
-    }
-    .produtos {
-        display:inline-flex
-    }
-}
